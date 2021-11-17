@@ -81,10 +81,9 @@ def exportFormattedPlaylist(tracklist):
         artistList.append(artist)
         title = track['track']['name']
         titleList.append(title)
-    playlistDict = {key: value for key, value in zip(artistList, titleList)}
-    return playlistDict
+    return titleList, artistList
 
-playlist = exportFormattedPlaylist(tracklist)
+titles, artists = exportFormattedPlaylist(tracklist)
 
 def checkSampled(a, t):
     query = f"{a.replace(' ', '%20')}%20-%20{t.replace(' ', '%20')}"
@@ -124,24 +123,19 @@ def sampleCompiler(a, t):
     else:
         return None, None
     
-def samplesPlaylist(playlist):
+def samplesPlaylist(titleList, artistList):
     samples = []
     samplesPlaylist = []
     print('SPOTIFY PLAYLIST DISCOVERED: \n')
-    for i in range(0, len(playlist)):
-        print(list(playlist.values())[i]+' by '+list(playlist)[i])
-    for i in range(0, len(playlist)):
-        samples, sampledBy = sampleCompiler(list(playlist)[i], list(playlist.values())[i])
+    for i in range(0, len(titleList)):
+        print(titleList[i]+' by '+ artistList[i])
+    for i in range(0, len(artistList)):
+        samples, sampledBy = sampleCompiler(artistList[i], titleList[i])
         if samples:
             samplesPlaylist.append(samples)
     newList = [i for j in samplesPlaylist for i in j]
     return newList
 
-def parseSamples(newList):
-    parsedPlaylist = []
-    for sample in newList:
-        parsedPlaylist.append({'artist':sample['artist'],'title':sample['title']})
-    return parsedPlaylist
 
 def findSamplesSpotify(newList):
     ccm = util.prompt_for_user_token(username, scope='playlist-modify-public', client_id=clientID, client_secret=clientSecret, redirect_uri='http://127.0.0.1.8080/')
@@ -164,6 +158,7 @@ def findSamplesSpotify(newList):
     location_rate = 1 - len(notFound)/len(newList)
     return {'ids': found, 'unfound': notFound, 'rate': location_rate}
 
+
 def setupNewPlaylist(newList, playlistName):
     ccm = util.prompt_for_user_token(username, scope='playlist-modify-public', client_id=clientID, client_secret=clientSecret, redirect_uri='http://127.0.0.1.8080/')
     sp = spotipy.Spotify(auth=ccm)
@@ -184,6 +179,6 @@ def createNewPlaylist(newList, playlistName):
 
 def run():
     name = input('Please enter the name of the sample playlist\n')
-    createNewPlaylist(parseSamples(samplesPlaylist(playlist)), name)
+    createNewPlaylist(samplesPlaylist(titles, artists), name)
     
 run()
