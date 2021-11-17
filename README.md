@@ -25,7 +25,7 @@ git pull https://github.com/josephquismorio/samplepy.git
 ### setting up the secrets file
 the file *secrets.py* contains slots for your application client ID, client secret, and your personal spotify username. fill those slots out accordingly. you can create an application at the spotify developer dashboard [here](https://developer.spotify.com/dashboard/).
 
-upon logging in, you are greeted with this menu. click "create an app" and you should be greeted by a little menu asking for a name and description for your app - you can name this app whatever you want.
+upon logging in, you are greeted with a... dashboard. click "create an app" and you should see a little menu asking for a name and description for your app - you can name this app whatever you want.
 
 next, find the section labeled "client ID". you should see a link just below it reading "show client secret" - click on it, and the client secret should show. copy both the client ID and client secret and paste it into the *secrets.py* file.
 
