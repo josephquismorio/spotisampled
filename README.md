@@ -22,6 +22,7 @@ download this repository using the command line:
 ```
 git pull https://github.com/josephquismorio/samplepy.git
 ```
+### setting up the secrets file
 the file *secrets.py* contains slots for your application client ID, client secret, and your personal spotify username. fill those slots out accordingly. you can create an application at the spotify developer dashboard [here](https://developer.spotify.com/dashboard/).
 
 upon logging in, you are greeted with this menu. click "create an app" and you should be greeted by a little menu asking for a name and description for your app - you can name this app whatever you want.
@@ -30,6 +31,7 @@ next, find the section labeled "client ID". you should see a link just below it 
 
 finally, fill in the username slot with your username, and you should be good as far as the secrets go!
 
+### running whosampled
 run the *whosampled.py* file using:
 ```
 python3 whosampled.py
