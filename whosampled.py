@@ -46,6 +46,7 @@ def accessToken(clientID, clientSecret):
     return token
 
 
+
 def playlistInfo(token, playlistID):
     # referenced from API endpoint reference #
     playlist = f"https://api.spotify.com/v1/playlists/{playlistID}"
@@ -178,7 +179,7 @@ def createNewPlaylist(newList, playlistName):
     pass
 
 def run():
-    name = input('Please enter a name for the sample playlist\n')
+    name = input('Please enter a name for the sample playlist: ')
     createNewPlaylist(samplesPlaylist(titles, artists), name)
     
 run()
