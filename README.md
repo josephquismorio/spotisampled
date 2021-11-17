@@ -17,5 +17,45 @@ and download the beautifulsoup library using the command line:
 pip install beautifulsoup4
 ```
 
-## usage
-run the *whosampled.py* file within a virtual environment (virtual studio code preferred. 
+## setup & usage
+download this repository using the command line:
+```
+git pull https://github.com/josephquismorio/samplepy.git
+```
+the file *secrets.py* contains slots for your application client ID, client secret, and your personal spotify username. fill those slots out accordingly. you can create an application at the spotify developer dashboard [here](https://developer.spotify.com/dashboard/).
+
+upon logging in, you are greeted with this menu. click "create an app" (shown below):
+![image](https://user-images.githubusercontent.com/70463608/142201943-26295fe9-35f4-483a-911c-ee149838c61d.png)
+
+you can name this app whatever you want.
+![image](https://user-images.githubusercontent.com/70463608/142202096-10136db8-b42a-4ba7-95c5-1686f239537e.png)
+
+next, copy the client ID and client secret and paste it into the *secrets.py* file.
+![image](https://user-images.githubusercontent.com/70463608/142201755-8fbdbe4f-4cc4-4d9c-a98a-8b5f8141090e.png)
+
+finally, fill in the username slot with your username, and you should be good as far as the secrets go!
+
+run the *whosampled.py* file using:
+```
+python3 whosampled.py
+```
+or
+```
+python whosampled.py
+```
+upon running the file, you will be prompted to input a playlist URL. make sure this is in the format "https://open.spotify.com/playlist/playlist-name".
+<img width="733" alt="Screen Shot 2021-11-17 at 6 41 57 AM" src="https://user-images.githubusercontent.com/70463608/142202598-b3a699e4-89b4-4cee-8109-54b39edd33b8.png">
+
+next, enter a name for your new playlist. what the name is doesn't matter.
+<img width="733" alt="Screen Shot 2021-11-17 at 6 43 51 AM" src="https://user-images.githubusercontent.com/70463608/142202885-d2d9234b-0563-457d-81fe-e42bc0b89be7.png">
+
+after these are completed, you should see a bunch of command lines that lay out all the tracks in your playlist.
+<img width="293" alt="Screen Shot 2021-11-17 at 6 45 04 AM" src="https://user-images.githubusercontent.com/70463608/142203055-cb7a5481-f3bd-4247-b8e3-925edfb6ebde.png">
+
+wait a little bit, and...
+<img width="790" alt="Screen Shot 2021-11-17 at 6 46 19 AM" src="https://user-images.githubusercontent.com/70463608/142203240-90af85cd-c2b8-4b0f-9421-5e5f76f7bcb3.png">
+
+boom! you should have a new playlist containing all the whosampled-ripped samples that could be found on spotify. there also should be a closing message along the lines of:
+```
+New playlist "test playlist" created!
+```
