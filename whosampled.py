@@ -62,7 +62,7 @@ def playlistInfo(token, playlistID):
 # API request #
 token = accessToken(clientID, clientSecret)
 
-playlistURL = input("Enter playlist URL: ")
+playlistURL = input("Please enter playlist URL: ")
 
 playlistID = playlistURL.replace("https://open.spotify.com/playlist/", "")
 
@@ -126,7 +126,7 @@ def sampleCompiler(a, t):
 def samplesPlaylist(titleList, artistList):
     samples = []
     samplesPlaylist = []
-    print('SPOTIFY PLAYLIST DISCOVERED: \n')
+    print('Playlist given: \n')
     for i in range(0, len(titleList)):
         print(titleList[i]+' by '+ artistList[i])
     for i in range(0, len(artistList)):
@@ -178,7 +178,7 @@ def createNewPlaylist(newList, playlistName):
     pass
 
 def run():
-    name = input('Please enter the name of the sample playlist\n')
+    name = input('Please enter a name for the sample playlist\n')
     createNewPlaylist(samplesPlaylist(titles, artists), name)
     
 run()
