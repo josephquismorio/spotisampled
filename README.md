@@ -1,4 +1,4 @@
-# whosampled
+# spotisampled
 a program that creates a new playlist of samples used by tracks/other tracks sampling tracks in a given spotify playlist using data from a beautifulsoup-facilitated web scrape from whosampled. an extension of my previous beginner spotipy project [playlist-data](https://github.com/josephquismorio/playlist-data) and build upon cpease00's [spotify-samples](https://github.com/cpease00/Spotify-Samples) repo.
 
 ## prior requirements
@@ -32,13 +32,13 @@ next, find the section labeled "client ID". you should see a link just below it 
 finally, fill in the username slot with your username, and you should be good as far as the secrets go!
 
 ### running whosampled
-run the *whosampled.py* file using:
+run the *spotisampled.py* file using:
 ```
-python3 whosampled.py
+python3 spotisampled.py
 ```
 or
 ```
-python whosampled.py
+python spotisampled.py
 ```
 upon running the file, you will be prompted to input a playlist URL (make sure this is in the format "https://open.spotify.com/playlist/playlist-name"):
 
