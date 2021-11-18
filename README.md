@@ -46,13 +46,7 @@ upon running the file, you will be prompted to input a playlist URL (make sure t
 Please enter playlist URL: https://open.spotify.com/playlist/blahblahblah
 ```
 
-next, enter a name for your new playlist:
-
-```
-Please enter a name for the sample playlist: test playlist
-```
-
-after these are completed, you should see a bunch of command lines that lay out all the tracks in your playlist.
+after this is completed, you should see a bunch of command lines that lay out all the tracks in your playlist.
 ```
 Playlist given: 
 
@@ -73,9 +67,13 @@ Fancy Clown by Madvillain
 
 wait a little bit, and...
 
-<img width="790" alt="Screen Shot 2021-11-17 at 6 46 19 AM" src="https://user-images.githubusercontent.com/70463608/142203240-90af85cd-c2b8-4b0f-9421-5e5f76f7bcb3.png">
+<img width="1149" alt="Screen Shot 2021-11-18 at 1 55 03 AM" src="https://user-images.githubusercontent.com/70463608/142374741-ae6f0fb2-31ca-47a3-9c1a-a1caca3ebfd8.png">
 
-boom! you should have a new playlist containing all the whosampled-ripped samples that could be found on spotify. there also should be a closing message along the lines of:
+boom! you should have a new playlist containing all the whosampled-ripped samples that could be found on spotify. there also should be a closing message that gives a list of the songs that were unable to be found by the program:
 ```
-New playlist "test playlist" created!
+New playlist created! Was unable to find:
+Indiana by Zoot Sims and Bucky Pizzarelli feat. Buddy Rich
+Give Me My Love by Johnny Guitar Watson
+Free Spirit by Walt Barr
+...
 ```
