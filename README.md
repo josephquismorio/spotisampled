@@ -58,7 +58,7 @@ Crime Pays by Freddie Gibbs
 
 wait a little bit, and...
 
-<img width="1149" alt="Screen Shot 2021-11-18 at 1 55 03 AM" src="https://user-images.githubusercontent.com/70463608/142374741-ae6f0fb2-31ca-47a3-9c1a-a1caca3ebfd8.png">
+<img width="1149" alt="Screen Shot 2021-11-18 at 1 58 18 AM" src="https://user-images.githubusercontent.com/70463608/142375196-38c7a00a-fc72-4f3f-8c9f-43d409a4872d.png">
 
 boom! you should have a new playlist containing all the whosampled-ripped samples that could be found on spotify. there also should be a closing message that gives a list of the songs that were unable to be found by the program:
 ```
