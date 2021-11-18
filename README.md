@@ -62,7 +62,7 @@ wait a little bit, and...
 
 boom! you should have a new playlist containing all the whosampled-ripped samples that could be found on spotify. there also should be a closing message that gives a list of the songs that were unable to be found by the program:
 ```
-New playlist created! Was unable to find:
+New playlist created! Unable to find:
 Indiana by Zoot Sims and Bucky Pizzarelli feat. Buddy Rich
 Give Me My Love by Johnny Guitar Watson
 Free Spirit by Walt Barr
