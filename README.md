@@ -1,5 +1,5 @@
 # spotisampled
-a program that creates a new playlist of samples used by tracks/other tracks sampling tracks in a given spotify playlist using data from a beautifulsoup-facilitated web scrape from whosampled. an extension of my previous beginner spotipy project [playlist-data](https://github.com/josephquismorio/playlist-data) and build upon cpease00's [spotify-samples](https://github.com/cpease00/Spotify-Samples) repo.
+a program that creates a new playlist of samples used by tracks/other tracks sampling tracks in a given spotify playlist using data from a beautifulsoup-facilitated web scrape from whosampled. an extension of my previous beginner spotipy project [playlist-data](https://github.com/josephquismorio/playlist-data).
 
 ## prior requirements
 this program requires the **requests**, **spotipy** and **beautifulsoup** libraries. 
