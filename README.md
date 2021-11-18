@@ -20,7 +20,7 @@ pip install beautifulsoup4
 ## setup & usage
 download this repository using the command line:
 ```
-git pull https://github.com/josephquismorio/samplepy.git
+git pull https://github.com/josephquismorio/spotisampled.git
 ```
 ### setting up the secrets file
 the file *secrets.py* contains slots for your application client ID, client secret, and your personal spotify username. fill those slots out accordingly. you can create an application at the spotify developer dashboard [here](https://developer.spotify.com/dashboard/).
