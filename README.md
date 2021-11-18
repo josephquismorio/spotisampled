@@ -43,7 +43,7 @@ python spotisampled.py
 upon running the file, you will be prompted to input a playlist URL (make sure this is in the format "https://open.spotify.com/playlist/playlist-name"):
 
 ```
-Please enter playlist URL: https://open.spotify.com/playlist/blahblahblah
+Please enter playlist URL: https://open.spotify.com/playlist/playlist-name
 ```
 
 after this is completed, you should see a bunch of command lines that lay out all the tracks in your playlist.
@@ -53,16 +53,7 @@ Playlist given:
 Dynamite! by The Roots
 No More Parties In LA by Kanye West
 Crime Pays by Freddie Gibbs
-Runnin' by The Pharcyde
-Pennyroyal by Joey Bada$$
-Doomsday by MF DOOM
-Accordion by Madvillain
-Potholderz feat. Count Bass D by MF DOOM
-Snakes by Joey Bada$$
-THAT'S THAT by MF DOOM
-Raid by Madvillain
-All Caps by Madvillain
-Fancy Clown by Madvillain
+...
 ```
 
 wait a little bit, and...
