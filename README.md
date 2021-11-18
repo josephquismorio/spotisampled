@@ -46,7 +46,7 @@ upon running the file, you will be prompted to input a playlist URL (make sure t
 Please enter playlist URL: https://open.spotify.com/playlist/playlist-name
 ```
 
-after this is completed, you should see a bunch of command lines that lay out all the tracks in your playlist.
+after this is completed, you should see a bunch of command lines that lay out all the tracks in your given playlist:
 ```
 Playlist given: 
 
