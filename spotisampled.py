@@ -129,7 +129,7 @@ def createNewPlaylist(newList):
     samples = findSamplesSpotify(newList)
     new_playlist = setupNewPlaylist(newList)
     print("-----------------------------------------")
-    print(f'New playlist created! Was unable to find:')
+    print(f'New playlist created! Unable to find:')
     for i in samples['unfound']:
         print(i)
     pass
